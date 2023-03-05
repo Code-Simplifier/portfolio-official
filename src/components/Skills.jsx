@@ -764,7 +764,7 @@ function Skills() {
             >
               Tools
               <div>
-                <Image src={"/analysis.png"} width={40} height={40} />
+                <Image src={"/tool-box.png"} width={40} height={40} />
               </div>
             </div>
             {/* content */}
