@@ -24,6 +24,7 @@ import {
 import Image from "next/image";
 import Model from "./modules/Model";
 import Popup from "reactjs-popup";
+import { AnimatedText } from "./modules/AnimatedText";
 
 function Skills() {
   const [open, setOpen] = useState(false);
@@ -118,13 +119,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          {/* <Tooltip anchorSelect="#html" content="HTML" /> */}
-                          <Image
-                            src={"/html-5.png"}
-                            id="html"
-                            height={30}
-                            width={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Improved Workflow"
+                          >
+                            <Image
+                              src={"/html-5.png"}
+                              id="html"
+                              height={30}
+                              width={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
