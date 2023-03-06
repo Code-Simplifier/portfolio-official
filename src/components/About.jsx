@@ -16,15 +16,19 @@ function About() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-10">
           <div className="flex justify-center">
-            <motion.img
+            <motion.div
               variants={fadeIn("down", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              src="/about2.jpeg"
-              alt="img"
-              className="h-[440px] rounded-xl mb-4"
-            ></motion.img>
+            >
+              <Image
+                src={"/about2.jpeg"}
+                height={440}
+                width={350}
+                className="h-[440px] rounded-xl mb-4"
+              />
+            </motion.div>
           </div>
           <div style={{ fontFamily: mont_thin.style.fontFamily }}>
             <motion.h2

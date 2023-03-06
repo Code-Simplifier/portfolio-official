@@ -2,8 +2,6 @@ import { fira_regular, mont_thin, raj, raj_bold } from "@/styles/fonts";
 import React, { useState } from "react";
 import { fadeIn } from "./varients";
 import { motion } from "framer-motion";
-import { Tooltip } from "react-tooltip";
-import "react-tooltip/dist/react-tooltip.css";
 
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { RxCross2 } from "react-icons/rx";
@@ -19,6 +17,8 @@ import {
   SiVercel,
   SiJupyter,
   SiPandas,
+  SiExpo,
+  SiFlutter,
 } from "react-icons/si";
 
 import Image from "next/image";
@@ -121,7 +121,7 @@ function Skills() {
                         >
                           <div
                             class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
-                            data-tip="Improved Workflow"
+                            data-tip="HTML"
                           >
                             <Image
                               src={"/html-5.png"}
@@ -145,13 +145,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          {/* <Tooltip anchorSelect="#css" content="CSS" /> */}
-                          <Image
-                            src={"/css-3.png"}
-                            id="css"
-                            height={30}
-                            width={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="CSS"
+                          >
+                            <Image
+                              src={"/css-3.png"}
+                              id="css"
+                              height={30}
+                              width={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -167,8 +171,12 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          {/* <Tooltip anchorSelect="#chak" content="Chakra UI" /> */}
-                          <SiChakraui size={30} id="chak" color="lime" />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="ChakraUI"
+                          >
+                            <SiChakraui size={30} id="chak" color="lime" />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -184,11 +192,12 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          {/* <Tooltip
-                            anchorSelect="#tail"
-                            content="Tailwind CSS"
-                          /> */}
-                          <SiTailwindcss size={30} id="tail" color="cyan" />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Tailwind CSS"
+                          >
+                            <SiTailwindcss size={30} id="tail" color="cyan" />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -272,8 +281,12 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#aws" content="AWS Amplify" />
-                          <SiAmazonaws size={30} id="aws" color="orange" />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Amazon Amplify"
+                          >
+                            <SiAmazonaws size={30} id="aws" color="orange" />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -289,8 +302,12 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#fire" content="Firbase" />
-                          <SiFirebase size={30} id="fire" color="yellow" />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Firebase"
+                          >
+                            <SiFirebase size={30} id="fire" color="yellow" />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -306,8 +323,12 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#mongo" content="MongoDB" />
-                          <SiMongodb size={30} id="mongo" color="lime" />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="MongoDB"
+                          >
+                            <SiMongodb size={30} id="mongo" color="lime" />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -323,13 +344,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#mysql" content="MySQL" />
-                          <Image
-                            src={"/mysql.png"}
-                            id="mysql"
-                            width={30}
-                            height={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="MySQL"
+                          >
+                            <Image
+                              src={"/mysql.png"}
+                              id="mysql"
+                              width={30}
+                              height={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -413,13 +438,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#react" content="ReactJS" />
-                          <Image
-                            src={"/physics.png"}
-                            id="react"
-                            width={30}
-                            height={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="ReactJS"
+                          >
+                            <Image
+                              src={"/physics.png"}
+                              id="react"
+                              width={30}
+                              height={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -435,8 +464,12 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#flask" content="Flask" />
-                          <SiFlask size={30} id="flask" color="white" />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Flask"
+                          >
+                            <SiFlask size={30} id="flask" color="white" />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -452,8 +485,12 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#next" content="NextJS" />
-                          <SiNextdotjs size={30} id="next" color="black" />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Next.JS"
+                          >
+                            <SiNextdotjs size={30} id="next" color="black" />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -469,13 +506,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#rne" content="React Native" />
-                          <Image
-                            src={"/atom.png"}
-                            id="rne"
-                            width={30}
-                            height={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="React Native"
+                          >
+                            <Image
+                              src={"/atom.png"}
+                              id="rne"
+                              width={30}
+                              height={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -491,13 +532,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#dj" content="Django" />
-                          <Image
-                            src={"/django.png"}
-                            id="dj"
-                            width={30}
-                            height={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Django"
+                          >
+                            <Image
+                              src={"/django.png"}
+                              id="dj"
+                              width={30}
+                              height={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -530,7 +575,7 @@ function Skills() {
             >
               Languages
               <div>
-                <Image src={"/mobile.png"} width={40} height={40} />
+                <Image src={"/coding.png"} width={40} height={40} />
               </div>
             </div>
             {/* content */}
@@ -581,13 +626,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#py" content="Python" />
-                          <Image
-                            src={"/python.png"}
-                            id="py"
-                            width={30}
-                            height={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Python"
+                          >
+                            <Image
+                              src={"/python.png"}
+                              id="py"
+                              width={30}
+                              height={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -603,14 +652,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#php" content="PHP" />
-
-                          <Image
-                            src={"/php.png"}
-                            id="php"
-                            width={30}
-                            height={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="PHP"
+                          >
+                            <Image
+                              src={"/php.png"}
+                              id="php"
+                              width={30}
+                              height={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -626,13 +678,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#js" content="Javascript" />
-                          <Image
-                            src={"/java-script.png"}
-                            id="js"
-                            width={30}
-                            height={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Javascript"
+                          >
+                            <Image
+                              src={"/java-script.png"}
+                              id="js"
+                              width={30}
+                              height={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -648,13 +704,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#html" content="HTML" />
-                          <Image
-                            src={"/html-5.png"}
-                            id="html"
-                            height={30}
-                            width={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="HTML"
+                          >
+                            <Image
+                              src={"/html-5.png"}
+                              id="html"
+                              height={30}
+                              width={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -670,13 +730,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#css" content="CSS" />
-                          <Image
-                            src={"/css-3.png"}
-                            id="css"
-                            height={30}
-                            width={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="CSS"
+                          >
+                            <Image
+                              src={"/css-3.png"}
+                              id="css"
+                              height={30}
+                              width={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -760,13 +824,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#git" content="Git" />
-                          <Image
-                            src={"/git.png"}
-                            id="git"
-                            width={30}
-                            height={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Git"
+                          >
+                            <Image
+                              src={"/git.png"}
+                              id="git"
+                              width={30}
+                              height={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -782,13 +850,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#figma" content="Figma" />
-                          <Image
-                            src={"/figma.png"}
-                            id="figma"
-                            height={30}
-                            width={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Figma"
+                          >
+                            <Image
+                              src={"/figma.png"}
+                              id="figma"
+                              height={30}
+                              width={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -804,8 +876,12 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#net" content="Netlify" />
-                          <SiNetlify size={30} id="net" color="cyan" />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Netlify"
+                          >
+                            <SiNetlify size={30} id="net" color="cyan" />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -821,13 +897,17 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#github" content="Github" />
-                          <Image
-                            src={"/github.png"}
-                            id="github"
-                            width={30}
-                            height={30}
-                          />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="HTML"
+                          >
+                            <Image
+                              src={"/github.png"}
+                              id="github"
+                              width={30}
+                              height={30}
+                            />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -843,8 +923,12 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#ver" content="Vercel" />
-                          <SiVercel size={30} id="ver" />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Vercel"
+                          >
+                            <SiVercel size={30} id="ver" />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -860,8 +944,12 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#jup" content="Jupyter" />
-                          <SiJupyter size={30} id="jup" color="orange" />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Jupyter"
+                          >
+                            <SiJupyter size={30} id="jup" color="orange" />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -877,8 +965,12 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#pan" content="Pandas" />
-                          <SiPandas size={30} id="pan" color="skyBlue" />
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Pandas"
+                          >
+                            <SiPandas size={30} id="pan" color="skyBlue" />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -896,6 +988,7 @@ function Skills() {
             </Popup>
           </motion.div>
 
+          {/* mobile dev */}
           <motion.div
             variants={fadeIn("up", 1.5)}
             initial="hidden"
@@ -908,7 +1001,7 @@ function Skills() {
               style={{ fontFamily: raj_bold.style.fontFamily }}
               className="gradText text-3xl m-2 pb-2 flex justify-between border-b border-slate-500"
             >
-              Languages
+              Mobile Development
               <div>
                 <Image src={"/mobile.png"} width={40} height={40} />
               </div>
@@ -942,7 +1035,7 @@ function Skills() {
                       style={{ fontFamily: raj_bold.style.fontFamily }}
                       className="text-3xl gradText mt-2 flex justify-between"
                     >
-                      <h1>Languages</h1>
+                      <h1>Mobile Development</h1>
                       <RxCross2 onClick={close} color="grey" />
                     </div>
                     <div
@@ -956,9 +1049,43 @@ function Skills() {
                       style={{ fontFamily: mont_thin.style.fontFamily }}
                       className="m-2 tracking-tighter"
                     >
-                      <div className="mb-2">
-                        <div className="mb-1">
-                          <span>Python</span>
+                      <div className="mb-2 flex items-center justify-center">
+                        <div
+                          className="mb-1 p-2 text-sm"
+                          style={{ fontFamily: fira_regular.style.fontFamily }}
+                        >
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="React Native"
+                          >
+                            <Image
+                              src={"/atom.png"}
+                              id="py"
+                              width={30}
+                              height={30}
+                            />
+                          </div>
+                        </div>
+                        <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
+                          <motion.span
+                            style={{
+                              fontFamily: fira_regular.style.fontFamily,
+                            }}
+                            className="progress-bar w-[80%]"
+                          ></motion.span>
+                        </div>
+                      </div>
+                      <div className="mb-2 flex items-center justify-center">
+                        <div
+                          className="mb-1 p-2 text-sm"
+                          style={{ fontFamily: fira_regular.style.fontFamily }}
+                        >
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Expo"
+                          >
+                            <SiExpo size={30} />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
@@ -969,29 +1096,24 @@ function Skills() {
                           ></motion.span>
                         </div>
                       </div>
-                      <div className="mb-2">
-                        <div className="mb-1">
-                          <span>PHP</span>
+                      <div className="mb-2 flex items-center justify-center">
+                        <div
+                          className="mb-1 p-2 text-sm"
+                          style={{ fontFamily: fira_regular.style.fontFamily }}
+                        >
+                          <div
+                            class="relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible"
+                            data-tip="Flutter"
+                          >
+                            <SiFlutter size={30} color="cyan" />
+                          </div>
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
                           <motion.span
                             style={{
                               fontFamily: fira_regular.style.fontFamily,
                             }}
-                            className="progress-bar w-[61%]"
-                          ></motion.span>
-                        </div>
-                      </div>
-                      <div className="mb-2">
-                        <div className="mb-1">
-                          <span>Javascript</span>
-                        </div>
-                        <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
-                          <motion.span
-                            style={{
-                              fontFamily: fira_regular.style.fontFamily,
-                            }}
-                            className="progress-bar w-[80%]"
+                            className="progress-bar w-[75%]"
                           ></motion.span>
                         </div>
                       </div>
