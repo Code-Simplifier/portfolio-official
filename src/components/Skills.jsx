@@ -29,66 +29,6 @@ function Skills() {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      {open && (
-        <Model
-          desc={
-            "Here is a list of all the tools and technologies I am familiar with and frequently use while building UIs!"
-          }
-          title={"UI/UX Design"}
-          setOpen={setOpen}
-        >
-          <div
-            style={{ fontFamily: mont_thin.style.fontFamily }}
-            className="m-2 tracking-tighter"
-          >
-            <div className="mb-2">
-              <div className="mb-1">
-                <span>HTML</span>
-              </div>
-              <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
-                <motion.span
-                  style={{ fontFamily: fira_regular.style.fontFamily }}
-                  className="progress-bar w-[80%]"
-                ></motion.span>
-              </div>
-            </div>
-            <div className="mb-2">
-              <div className="mb-1">
-                <span>CSS</span>
-              </div>
-              <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
-                <motion.span
-                  style={{ fontFamily: fira_regular.style.fontFamily }}
-                  className="progress-bar w-[90%]"
-                ></motion.span>
-              </div>
-            </div>
-            <div className="mb-2">
-              <div className="mb-1">
-                <span>Chakra UI</span>
-              </div>
-              <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
-                <motion.span
-                  style={{ fontFamily: fira_regular.style.fontFamily }}
-                  className="progress-bar w-[73%]"
-                ></motion.span>
-              </div>
-            </div>
-            <div className="mb-2">
-              <div className="mb-1">
-                <span>Tailwind</span>
-              </div>
-              <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
-                <motion.span
-                  style={{ fontFamily: fira_regular.style.fontFamily }}
-                  className="progress-bar w-[88%]"
-                ></motion.span>
-              </div>
-            </div>
-          </div>
-        </Model>
-      )}
-
       <div id="skills" className="flex flex-col justify-center items-center">
         <motion.h2
           variants={fadeIn("up", 0.3)}
@@ -178,7 +118,7 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#html" content="HTML" />
+                          {/* <Tooltip anchorSelect="#html" content="HTML" /> */}
                           <Image
                             src={"/html-5.png"}
                             id="html"
@@ -200,7 +140,7 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#css" content="CSS" />
+                          {/* <Tooltip anchorSelect="#css" content="CSS" /> */}
                           <Image
                             src={"/css-3.png"}
                             id="css"
@@ -222,7 +162,7 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip anchorSelect="#chak" content="Chakra UI" />
+                          {/* <Tooltip anchorSelect="#chak" content="Chakra UI" /> */}
                           <SiChakraui size={30} id="chak" color="lime" />
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
@@ -239,10 +179,10 @@ function Skills() {
                           className="mb-1 p-2 text-sm"
                           style={{ fontFamily: fira_regular.style.fontFamily }}
                         >
-                          <Tooltip
+                          {/* <Tooltip
                             anchorSelect="#tail"
                             content="Tailwind CSS"
-                          />
+                          /> */}
                           <SiTailwindcss size={30} id="tail" color="cyan" />
                         </div>
                         <div className="h-[10px] w-full bg-slate-500/30 rounded-md relative">
